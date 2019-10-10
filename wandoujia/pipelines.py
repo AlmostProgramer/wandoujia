@@ -8,6 +8,8 @@
 import scrapy
 import pymongo
 
+#常用的mongodb保存方法，以后可以来这里copy
+
 class WandoujiaPipeline(object):
 
     def __init__(self,mongo_url,mongo_db):

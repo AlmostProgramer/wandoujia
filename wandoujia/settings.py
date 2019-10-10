@@ -56,6 +56,7 @@ COOKIES_ENABLED = False
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    #要记得安装scrapy-fake-useragent库，不然报错
     'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware':400,
 }
 
